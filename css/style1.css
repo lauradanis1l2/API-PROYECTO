@@ -1,0 +1,69 @@
+/* Estilos generales para todos los elementos en la página */
+* {
+    margin: 0;                  /* Establece el margen exterior en 0 */
+    padding: 0;                 /* Establece el relleno interior en 0 */
+    box-sizing: border-box;     /* Utiliza el modelo de caja "border-box" para el tamaño total del elemento */
+    font-family: 'Roboto', sans-serif;  /* Establece la fuente predeterminada para todos los elementos como 'Roboto' o una fuente sans-serif genérica */
+}
+
+/* Estilos para el cuerpo de la página */
+body {
+    height: 120vh;              /* Establece la altura del cuerpo en el 100% del alto de la ventana (viewport height) */
+    display: flex;              /* Utiliza el modelo de caja flexibled para alinear y distribuir elementos hijos */
+    align-items: center;        /* Alinea los elementos verticalmente en el centro */
+    justify-content: center;    /* Alinea los elementos horizontalmente en el centro */
+    background-image: url(../img/123.png);   /* Establece una imagen de fondo */
+    background-position: center; /* Alinea la imagen de fondo en el centro */
+    background-repeat: no-repeat; /* Evita que la imagen de fondo se repita */
+    background-size: cover;     /* Escala la imagen de fondo para cubrir todo el cuerpo */
+    color: white;               /* Establece el color de texto en blanco */
+}
+
+/* Estilo para elementos con la clase "regis-back" */
+.regis-back {
+    display: flex;              /* Utiliza el modelo de caja flexible */
+    align-items: center;        /* Alinea los elementos verticalmente en el centro */
+    text-align: center;         /* Alinea el texto en el centro horizontalmente */
+}
+
+/* Estilo para encabezados h2 dentro de elementos con la clase "registro" */
+.registro h2 {
+    font-size: 2.7rem;          /* Establece el tamaño de fuente en 2.7 rem */
+    padding: 5rem 0;         /* Agrega relleno superior e inferior de 5 rem (Nota: hay un error de sintaxis aquí, parece haber una llave de apertura adicional) */
+    padding: 5rem;              /* Establece un relleno total de 5 rem */
+}
+
+/* Estilo para botones dentro de elementos con la clase "registro" */
+.registro button {
+    padding: 1rem;              /* Agrega relleno de 1 rem */
+    font-weight: 400;           /* Establece el peso de la fuente en 400 */
+    background-color: #4e4030; /* Establece el color de fondo */
+    border-radius: 2rem;        /* Agrega un borde redondeado de 2 rem */
+    border: none;               /* Elimina el borde */
+    outline: none;              /* Elimina el contorno */
+    cursor: pointer;            /* Cambia el cursor del ratón a una mano */
+    font-size: .9rem;           /* Establece el tamaño de fuente en 0.9 rem */
+    margin-top: 2rem;           /* Agrega margen en la parte superior de 2 rem */
+    transition: all .3s ease-in; /* Agrega una transición suave */
+    color: #fff;                /* Establece el color de texto en blanco */
+}
+
+/* Estilo para botones en estado hover (cuando el mouse se coloca sobre ellos) */
+.registro button:hover {
+    background-color:#312828;   /* Cambia el color de fondo cuando se pasa el mouse */
+}
+
+/* Estilo para elementos con la clase "sign-in" */
+.sign-in {
+    position: absolute;         /* Establece la posición como absoluta */
+    opacity: 10;                /* Establece la opacidad en 10 (Nota: el valor de opacidad debería estar entre 0 y 1, no en 10) */
+    visibility: hidden;         /* Establece la visibilidad como oculta */
+}
+
+/* Estilo para elementos con la clase "sign-in" en estado activo */
+.sign-in.active {
+    opacity: 10;                /* Establece la opacidad en 10 (Nota: el valor de opacidad debería estar entre 0 y 1, no en 10) */
+    visibility: visible;        /* Establece la visibilidad como visible */
+}
+
+

@@ -1,0 +1,1186 @@
+/* Selecciona todos los elementos en la página */
+
+* {
+    /* Establece el margen de todos los elementos en 0 */
+    margin: 0;
+    
+    /* Establece el relleno de todos los elementos en 0 */
+    padding: 0;
+    
+    /* La propiedad 'box-sizing' controla cómo se calcula el tamaño total de un elemento,
+       'border-box' significa que el tamaño total incluye el contenido, el relleno y el borde */
+    box-sizing: border-box;
+    
+    /* Establece la fuente predeterminada para todos los elementos como 'Roboto' y otras fuentes
+       de respaldo de tipo sans-serif en caso de que 'Roboto' no esté disponible */
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Estilo para el elemento <body> de la página */
+
+body {
+    /* Establece la altura del elemento <body> al 100% del viewport height (altura de la ventana del navegador) */
+    height: 100vh;
+    
+    /* Utiliza el modelo de caja flex para el elemento <body>,
+       lo que permite alinear y justificar elementos hijos de manera flexible */
+    display: flex;
+    
+    /* Alinea los elementos hijos verticalmente al centro del elemento <body> */
+    align-items: center;
+    
+    /* Justifica (alinea horizontalmente) los elementos hijos al centro del elemento <body> */
+    justify-content: center;
+    
+    /* Establece la imagen de fondo del elemento <body> utilizando laURL especificada,
+       en este caso, "../img/imge.jpg" */
+    background-image: url(../img/123.png);
+    
+    /* Establece la posición de la imagen de fondo al centro del elemento <body> */
+    background-position: center;
+    
+    /* Evita que la imagen de fondo se repita en el elemento <body> */
+    background-repeat: no-repeat;
+    
+    /* Ajusta el tamaño de la imagen de fondo para cubrir completamente el elemento <body>,
+       lo que puede implicar recortar parte de la imagen si es necesario */
+    background-size: cover;
+    
+    /* Establece el color del texto dentro del elemento <body> en blanco (color de texto) */
+    color: white;
+}
+
+/* Estilo para la clase "container-form" */
+
+.container-form {
+    /* Establece el ancho del contenedor al 90% del ancho del contenedor padre */
+    width: 90%;
+    
+    /* Establece la altura del contenedor al 90% del viewport height (altura de la ventana del navegador) */
+    height: 90vh;
+    
+    /* Utiliza el modelo de caja flex para el contenedor,
+       lo que permite alinear y distribuir elementos hijos de manera flexible */
+    display: flex;
+    
+    /* Justifica el espacio alrededor de los elementos hijos dentro del contenedor.
+       Esto distribuye el espacio disponible de manera uniforme alrededor de los elementos hijos. */
+    justify-content: space-around;
+    
+    /* Aplica una transición a todas las propiedades que cambian durante 0.5 segundos,
+       con una función de temporización de salida suave (ease-out) */
+    transition: all .5s ease-out;
+}
+
+/* Estilo para la clase "welcome-back" */
+
+.welcome-back {
+    /* Utiliza el modelo de caja flex para los elementos con esta clase,
+       lo que permite alinear y distribuir elementos hijos de manera flexible */
+    display: flex;
+    
+    /* Alinea verticalmente los elementos hijos al centro del contenedor con esta clase */
+    align-items: center;
+    
+    /* Establece el texto dentro de los elementos con esta clase alineado al centro horizontalmente */
+    text-align: center;
+}
+
+/* Estilo para la clase "message" */
+
+.message {
+    /* Agrega un relleno de 1 rem (16 píxeles) en todos los lados del elemento con esta clase */
+    padding: 1rem;
+}
+
+/* Estilo para los elementos <h2> dentro de elementos con la clase "message" */
+
+.message h2 {
+    /* Establece el tamaño de fuente de los elementos <h2> dentro de "message" a 1.7 rem (17 píxeles) */
+    font-size: 1.7rem;
+    
+    /* Agrega un relleno de 1 rem (16 píxeles) arriba y abajo y ningún relleno en los lados izquierdo y derecho
+       para los elementos <h2> dentro de "message" */
+    padding: 1rem 0;
+}
+
+/* Estilo para los elementos <button> dentro de elementos con la clase "message" */
+
+.message button {
+    /* Agrega un relleno de 1 rem (16 píxeles) en todos los lados del botón */
+    padding: 1rem;
+    
+    /* Establece el peso de la fuente a 400, que es generalmente un peso normal */
+    font-weight: 400;
+    
+    /* Establece el color de fondo del botón a #4e4030 */
+    background-color: #4e4030;
+    
+    /* Aplica un borde redondeado de 2 rem (32 píxeles) al botón */
+    border-radius: 2rem;
+    
+    /* Elimina el borde del botón */
+    border: none;
+    
+    /* Elimina el contorno (outline) del botón cuando está enfocado */
+    outline: none;
+    
+    /* Cambia el cursor del ratón a una mano cuando pasa sobre el botón, indicando que es interactivo */
+    cursor: pointer;
+    
+    /* Establece el tamaño de fuente del botón en 0.9 rem (aproximadamente 9 píxeles) */
+    font-size: .9rem;
+    
+    /* Agrega un margen en la parte superior del botón de 2 rem (32 píxeles) */
+    margin-top: 2rem;
+    
+    /* Aplica una transición suave de 0.3 segundos a todas las propiedades del botón */
+    transition: all .3s ease-in;
+    
+    /* Establece el color del texto del botón en blanco (#fff) */
+    color: #fff;
+}
+
+/* Estilo para los elementos <button> dentro de elementos con la clase "message" cuando el cursor está sobre ellos */
+
+.message button:hover {
+    /* Cambia el color de fondo del botón a #4c3b27 cuando el cursor está sobre el botón */
+    background-color: #4c3b27;
+}
+
+/* Estilo para los elementos con la clase "formulario" */
+
+.formulario {
+    /* Establece el ancho del formulario en 450 píxeles */
+    width: 450px;
+    
+    /* Agrega un relleno de 1 rem (16 píxeles) en todos los lados del formulario */
+    padding: 1rem;
+    
+    /* Establece el margen del formulario en 0, es decir, no tiene margen externo */
+    margin: 0rem;
+    
+    /* Establece el color de fondo del formulario a #85705c8c */
+    background-color: #85705c8c;
+    
+    /* Establece el texto dentro del formulario alineado al centro horizontalmente */
+    text-align: center;
+}
+
+/* Estilo para elementos con la clase "create-account" */
+
+.create-account {
+    /* Agrega un relleno de 2.7 rem (aproximadamente 27 píxeles) arriba y abajo y 0 en los lados */
+    padding: 2.7rem 0;
+    
+    /* Establece el tamaño de fuente en 1.7 rem (aproximadamente 17 píxeles) */
+    font-size: 1.7rem;
+}
+
+/* Estilo para elementos con la clase "iconos" */
+
+.iconos {
+    /* Establece un ancho máximo de 200 píxeles para los elementos con esta clase */
+    width: 200px;
+    
+    /* Utiliza el modelo de caja flex para los elementos con esta clase,
+       lo que permite alinear y distribuir elementos hijos de manera flexible */
+    display: flex;
+    
+    /* Justifica el espacio alrededor de los elementos hijos dentro de los elementos con esta clase */
+    justify-content: space-around;
+    
+    /* Establece el margen en auto para centrar horizontalmente los elementos con esta clase */
+    margin: auto;
+}
+
+/* Estilo para elementos con la clase "border-icon" */
+
+.border-icon {
+    /* Establece la altura y el ancho del elemento en 50 píxeles */
+    height: 50px;
+    width: 50px;
+    
+    /* Utiliza el modelo de caja flex para los elementos con esta clase,
+       lo que permite alinear y distribuir elementos hijos de manera flexible */
+    display: flex;
+    
+    /* Alinea verticalmente los elementos hijos al centro del elemento */
+    align-items: center;
+    
+    /* Justifica (alinea horizontalmente) los elementos hijos al centro del elemento */
+    justify-content: center;
+    
+    /* Agrega un relleno de 1.5 rem (aproximadamente 15 píxeles) en todos los lados del elemento */
+    padding: 1.5rem;
+    
+    /* Agrega un borde sólido delgado de color blanco alrededor del elemento */
+    border: solid thin white;
+    
+    /* Aplica un radio de borde (border-radius) del 50% para hacer que el elemento sea circular */
+    border-radius: 50%;
+    
+    /* Establece el tamaño de fuente en 1.5 rem (aproximadamente 15 píxeles) */
+    font-size: 1.5rem;
+    
+    /* Aplica una transición suave de 0.3 segundos a todas las propiedades del elemento */
+    transition: all .3s ease-in;
+}
+
+/* Estilo para elementos con la clase "border-icon" cuando el cursor está sobre ellos */
+
+.border-icon:hover {
+    /* Cambia el color de fondo del elemento cuando el cursor está sobre él a #4c3b27 */
+    background-color: #4c3b27;
+    
+    /* Cambia el cursor del ratón a una mano cuando pasa sobre el elemento, indicando que es interactivo */
+    cursor: pointer;
+}
+
+/* Estilo para elementos con la clase "cuenta-gratis" */
+
+.cuenta-gratis {
+    /* Agrega un relleno de 2 rem (aproximadamente 20 píxeles) arriba y abajo y 0 en los lados */
+    padding: 2rem 0;
+}
+
+/* Estilo para los elementos <input> dentro de elementos con la clase "formulario" */
+
+.formulario input {
+    /* Establece el ancho del input en el 50% del ancho de su contenedor */
+    width: 50%;
+    
+    /* Establece el elemento <input> como un bloque, lo que hace que ocupe todo el ancho disponible */
+    display: block;
+    
+    /* Centra horizontalmente el input en su contenedor */
+    margin: auto;
+    
+    /* Agrega un margen en la parte inferior del input de 1.2 rem (aproximadamente 12 píxeles) */
+    margin-bottom: 1.2rem;
+    
+    /* Establece el color de fondo del input como transparente */
+    background-color: transparent;
+    
+    /* Elimina el borde del input */
+    border: none;
+    
+    /* Agrega un borde inferior delgado de color blanco */
+    border-bottom: white thin solid;
+    
+    /* Alinea el texto dentro del input al centro horizontalmente */
+    text-align: center;
+    
+    /* Elimina el contorno (outline) del input cuando está enfocado */
+    outline: none;
+    
+    /* Elimina el relleno del input en la parte superior e inferior, y establece un relleno de 0 en los lados izquierdo y derecho */
+    padding: .0rem 0;
+    
+    /* Establece el tamaño de fuente del input en 0.9 rem (aproximadamente 9 píxeles) */
+    font-size: .9rem;
+    
+    /* Establece el color del texto dentro del input en #070707 */
+    color: #070707;
+}
+
+/* Estilo para los elementos <input> con atributo type="button" dentro de elementos con la clase "formulario" */
+
+.formulario input[type="button"] {
+    /* Establece el ancho del input de tipo "button" en el 60% del ancho de su contenedor */
+    width: 60%;
+    
+    /* Centra horizontalmente el input de tipo "button" en su contenedor */
+    margin: auto;
+    
+    /* Agrega un borde sólido delgado con color #4c3b27 alrededor del input de tipo "button" */
+    border: solid thin #4c3b27;
+    
+    /* Agrega un relleno de 0.7 rem (aproximadamente 7 píxeles) en todos los lados del input de tipo "button" */
+    padding: .7rem;
+    
+    /* Aplica un radio de borde (border-radius) de 2 rem (aproximadamente 20 píxeles) para hacer que el input de tipo "button" sea redondeado */
+    border-radius: 2rem;
+    
+    /* Establece el color de fondo del input de tipo "button" en #4c3b27 */
+    background-color: #4c3b27;
+    
+    /* Establece el peso de la fuente en 600, que es un peso semibold */
+    font-weight: 600;
+    
+    /* Agrega un margen en la parte superior del input de tipo "button" de 3 rem (aproximadamente 30 píxeles) */
+    margin-top: 3rem;
+    
+    /* Establece el tamaño de fuente del input de tipo "button" en 0.8 rem (aproximadamente 8 píxeles) */
+    font-size: .8rem;
+    
+    /* Cambia el cursor del ratón a una mano cuando pasa sobre el input de tipo "button", indicando que es interactivo */
+    cursor: pointer;
+    
+    /* Establece el color del texto dentro del input de tipo "button" en blanco */
+    color: white;
+}
+
+/* Estilo para los elementos <input> con atributo type="submit" dentro de elementos con la clase "formulario" */
+
+.formulario input[type="submit"] {
+    /* Establece el ancho del input de tipo "submit" en el 60% del ancho de su contenedor */
+    width: 60%;
+    
+    /* Centra horizontalmente el input de tipo "submit" en su contenedor */
+    margin: auto;
+    
+    /* Agrega un borde sólido delgado con color #4c3b27 alrededor del input de tipo "submit" */
+    border: solid thin #4c3b27;
+    
+    /* Agrega un relleno de 0.7 rem (aproximadamente 7 píxeles) en todos los lados del input de tipo "submit" */
+    padding: .7rem;
+    
+    /* Aplica un radio de borde (border-radius) de 2 rem (aproximadamente 20 píxeles) para hacer que el input de tipo "submit" sea redondeado */
+    border-radius: 2rem;
+    
+    /* Establece el color de fondo del input de tipo "submit" en #4c3b27 */
+    background-color: #4c3b27;
+    
+    /* Establece el peso de la fuente en 600, que es un peso semibold */
+    font-weight: 600;
+    
+    /* Agrega un margen en la parte superior del input de tipo "submit" de 3 rem (aproximadamente 30 píxeles) */
+    margin-top: 3rem;
+    
+    /* Establece el tamaño de fuente del input de tipo "submit" en 0.8 rem (aproximadamente 8 píxeles) */
+    font-size: .8rem;
+    
+    /* Cambia el cursor del ratón a una mano cuando pasa sobre el input de tipo "submit", indicando que es interactivo */
+    cursor: pointer;
+    
+    /* Establece el color del texto dentro del input de tipo "submit" en blanco */
+    color: white;
+}
+
+/* Estilo para elementos con la clase "sign-in" */
+
+.sign-in {
+    /* Establece la posición del elemento como absoluta, lo que lo coloca en relación con su contenedor principal */
+    position: absolute;
+    
+    /* Establece la opacidad del elemento en 0, lo que lo hace completamente transparente */
+    opacity: 0;
+    
+    /* Establece la visibilidad del elemento en "oculto" */
+    visibility: hidden;
+}
+
+/* Estilo para elementos con la clase "sign-in" que también tienen la clase "active" */
+
+.sign-in.active {
+    /* Cuando el elemento tiene la clase "active", establece la opacidad en 1, lo que lo hace completamente visible */
+    opacity: 1;
+    
+    /* Cuando el elemento tiene la clase "active", establece la visibilidad en "visible" */
+    visibility: visible;
+}
+
+/* Estilo para elementos con la clase "sign-up" que tienen la clase "active" */
+
+.sign-up.active {
+    /* Cuando el elemento tiene la clase "active", establece la opacidad en 0, lo que lo hace completamente transparente */
+    opacity: 0;
+    
+    /* Cuando el elemento tiene la clase "active", establece la visibilidad en "oculto" */
+    visibility: hidden;
+}
+
+/* Estilo para elementos con la clase "boton" */
+
+.boton {
+    /* Establece el ancho del botón en el 60% del ancho de su contenedor */
+    width: 60%;
+    
+    /* Centra horizontalmente el botón en su contenedor */
+    margin: auto;
+    
+    /* Agrega un borde sólido delgado con color #4c3b27 alrededor del botón */
+    border: solid thin #4c3b27;
+    
+    /* Agrega un relleno de 0.7 rem (aproximadamente 7 píxeles) en todos los lados del botón */
+    padding: .7rem;
+    
+    /* Aplica un radio de borde (border-radius) de 2 rem (aproximadamente 20 píxeles) para hacer que el botón sea redondeado */
+    border-radius: 2rem;
+    
+    /* Establece el color de fondo del botón en #4c3b27 */
+    background-color: #4c3b27;
+    
+    /* Establece el peso de la fuente en 600, que es un peso semibold */
+    font-weight: 600;
+    
+    /* Agrega un margen en la parte superior del botón de 3 rem (aproximadamente 30 píxeles) */
+    margin-top: 3rem;
+    
+    /* Establece el tamaño de fuente del botón en 0.8 rem (aproximadamente 8 píxeles) */
+    font-size: .8rem;
+    
+    /* Cambia el cursor del ratón a una mano cuando pasa sobre el botón, indicando que es interactivo */
+    cursor: pointer;
+    
+    /* Establece el color del texto dentro del botón en blanco */
+    color: white;
+}
+
+/* Estilo para elementos con la clase "menu" */
+
+.menu {
+    /* Establece la posición fija del menú */
+    position: fixed;
+    
+    /* Coloca el menú en la parte superior izquierda de la ventana del navegador */
+    top: 0%;
+    left: 0;
+    
+    /* Establece el ancho del menú en 175 píxeles */
+    width: 175px;
+    
+    /* Establece la altura del menú en 100% de la altura de la ventana del navegador */
+    height: 100vh;
+    
+    /* Establece el color de fondo del menú en #b08e6b */
+    background-color: #b08e6b;
+    
+    /* Utiliza el modelo de caja flex para el menú,
+       lo que permite alinear y distribuir elementos hijos de manera flexible */
+    display: flex;
+    
+    /* Establece la dirección de flexión en columna, lo que apila los elementos hijos verticalmente */
+    flex-direction: column;
+    
+    /* Alinea los elementos hijos al inicio del eje principal (vertical) */
+    align-items: flex-start;
+    
+    /* Alinea los elementos hijos al inicio del eje secundario (horizontal) */
+    justify-content: flex-start;
+    
+    /* Agrega un relleno de 20 píxeles en todos los lados del menú */
+    padding: 20px;
+}
+
+/* Estilo para elementos con la clase "button" dentro de elementos con la clase "menu" */
+
+.button {
+    /* Establece el color de texto de los botones en blanco */
+    color: #fff;
+    
+    /* Agrega un margen en la parte inferior de los botones de 10 píxeles */
+    margin-bottom: 10px;
+}
+
+/* Estilo para elementos con la clase "button" dentro de elementos con la clase "menu" cuando el cursor está sobre ellos */
+
+.button:hover {
+    /* Cambia el color de fondo de los botones al pasar el mouse a #418262 */
+    background-color: #418262;
+}
+
+/* Estilo para elementos con la clase "circle-image" */
+
+.circle-image {
+    /* Establece el ancho y la altura de la imagen en 200 píxeles */
+    width: 200px;
+    height: 200px;
+    
+    /* Aplica un radio de borde (border-radius) del 50% para hacer que la imagen sea circular */
+    border-radius: 50%;
+    
+    /* Utiliza "object-fit: cover" para asegurarse de que la imagen se ajuste completamente en el círculo sin deformarse */
+    object-fit: cover;
+}
+
+/* Estilo para elementos con la clase "boton2" */
+
+.boton2 {
+    /* Establece el ancho del botón2 en 115% del ancho de su contenedor (un poco más ancho) */
+    width: 115%;
+    
+    /* Centra horizontalmente el botón2 en su contenedor */
+    margin: auto;
+    
+    /* Agrega un borde sólido delgado con color #4c3b27 alrededor del botón2 */
+    border: solid thin #4c3b27;
+    
+    /* Agrega un relleno de 0.7 rem (aproximadamente 7 píxeles) en todos los lados del botón2 */
+    padding: .7rem;
+    
+    /* Aplica un radio de borde (border-radius) de 2 rem (aproximadamente 20 píxeles) para hacer que el botón2 sea redondeado */
+    border-radius: 2rem;
+    
+    /* Establece el color de fondo del botón2 en #4c3b27 */
+    background-color: #4c3b27;
+    
+    /* Establece el peso de la fuente en 600, que es un peso semibold */
+    font-weight: 600;
+    
+    /* Agrega un margen en la parte superior del botón2 de 3 rem (aproximadamente 30 píxeles) */
+    margin-top: 3rem;
+    
+    /* Establece el tamaño de fuente del botón2 en 0.8 rem (aproximadamente 8 píxeles) */
+    font-size: .8rem;
+    
+    /* Cambia el cursor del ratón a una mano cuando pasa sobre el botón2, indicando que es interactivo */
+    cursor: pointer;
+    
+    /* Establece el color del texto dentro del botón2 en blanco */
+    color: white;
+}
+
+/* Estilo para elementos con la clase "circle1-image" */
+
+.circle1-image {
+    /* Establece el ancho y la altura de la imagen en 200 píxeles */
+    width: 50px;
+    height: 50px;
+    
+    /* Aplica un radio de borde (border-radius) del 50% para hacer que la imagen sea circular */
+    border-radius: 50%;
+    
+    /* Utiliza "object-fit: cover" para asegurarse de que la imagen se ajuste completamente en el círculo sin deformarse */
+    object-fit: cover;
+    
+    /* Establece la posición del elemento como absoluta, lo que lo coloca en relación con su contenedor principal */
+    position: absolute;
+    
+    /* Coloca el elemento en la parte superior derecha de su contenedor, desplazándolo un 3% desde la parte superior y un 5% desde la derecha */
+    top: 3%;
+    right: 5%;
+}
+
+/* Estilo para elementos con la clase "circle2-image" */
+
+.circle2-image {
+    /* Establece el ancho y la altura de la imagen en 150 píxeles */
+    width: 150px;
+    height: 150px;
+    
+    /* Aplica un radio de borde (border-radius) del 50% para hacer que la imagen sea circular */
+    border-radius: 50%;
+    
+    /* Utiliza "object-fit: cover" para asegurarse de que la imagen se ajuste completamente en el círculo sin deformarse */
+    object-fit: cover;
+    
+    /* Establece la posición del elemento como absoluta, lo que lo coloca en relación con su contenedor principal */
+    position: absolute;
+    
+    /* Coloca el elemento en la parte superior derecha de su contenedor, desplazándolo un 2% desde la parte superior y un 13% desde la derecha */
+    top: 2%;
+    right: 13%;
+}
+
+/* Estilo para elementos con la clase "circle3-image" */
+
+.circle3-image {
+    /* Establece el ancho y la altura de la imagen en 170 píxeles */
+    width: 170px;
+    height: 170px;
+    
+    /* Aplica un radio de borde (border-radius) del 50% para hacer que la imagen sea circular */
+    border-radius: 50%;
+    
+    /* Utiliza "object-fit: cover" para asegurarse de que la imagen se ajuste completamente en el círculo sin deformarse */
+    object-fit: cover;
+    
+    /* Establece la posición del elemento como absoluta, lo que lo coloca en relación con su contenedor principal */
+    position: absolute;
+    
+    /* Coloca el elemento en la parte inferior derecha de su contenedor, desplazándolo un 1% desde la derecha y un 1% desde la parte inferior */
+    right: 1%;
+    bottom: 1%;
+}
+
+/* Estilo para elementos con la clase "product" */
+
+.product {
+    /* Establece el elemento como en línea con bloque */
+    display: inline-block;
+    
+    /* Agrega un margen exterior de 20 píxeles en todos los lados del elemento */
+    margin: 20px;
+    
+    /* Alinea el contenido del elemento al centro horizontalmente */
+    text-align: center;
+}
+
+/* Estilo para las imágenes dentro de elementos con la clase "product" */
+
+.product img {
+    /* Establece el ancho y la altura de la imagen en 130 píxeles */
+    width: 130px;
+    height: 130px;
+    
+    /* Utiliza "object-fit: cover" para asegurarse de que la imagen se ajuste completamente en el círculo sin deformarse */
+    object-fit: cover;
+    
+    /* Aplica un radio de borde (border-radius) del 50% para hacer que la imagen sea circular */
+    border-radius: 50%;
+}
+
+/* Estilo para elementos con la clase "category" dentro de elementos con la clase "product" */
+
+.product .category {
+    /* Establece el peso de la fuente en negrita (bold) */
+    font-weight: bold;
+    
+    /* Agrega un margen en la parte superior de 10 píxeles */
+    margin-top: 10px;
+}
+
+/* Estilo para elementos con la clase "price" dentro de elementos con la clase "product" */
+
+.product .price {
+    /* Agrega un margen en la parte superior de 5 píxeles */
+    margin-top: 5px;
+}
+
+/* Estilo para elementos con la clase "description" dentro de elementos con la clase "product" */
+
+.product .description {
+    /* Agrega un margen en la parte superior de 5 píxeles */
+    margin-top: 5px;
+}
+
+/* Estilo para elementos con la clase "titulocat" */
+
+.titulocat {
+    /* Establece el ancho del elemento en 115% del ancho de su contenedor */
+    width: 115%;
+    
+    /* Coloca el elemento en la parte superior del contenedor, desplazándolo un 0% desde la parte superior */
+    top: 0%;
+}
+
+/* Estilo para el contenedor de la barra de desplazamiento horizontal */
+
+.scroll-bar-container {
+    /* Establece el ancho del contenedor al 100% del ancho de su contenedor principal */
+    width: 100%;
+    
+    /* Habilita el desplazamiento horizontal */
+    overflow-x: scroll;
+    
+    /* Controla el flujo del texto en una línea sin saltos de línea */
+    white-space: nowrap;
+}
+
+/* Estilo para el contenido dentro de la barra de desplazamiento horizontal */
+
+.scroll-bar-content {
+    /* Establece el ancho total del contenido dentro de la barra en 2000 píxeles */
+    width: 2000px;
+    
+    /* Establece la altura de la barra en 200 píxeles */
+    height: 200px;
+    
+    /* Establece el color de fondo del contenido en #f1f1f1 */
+    background-color: #f1f1f1;
+}
+
+/* Estilo para cada elemento dentro de la barra de desplazamiento horizontal */
+
+.scroll-bar-item {
+    /* Establece el elemento como en línea con bloque */
+    display: inline-block;
+    
+    /* Establece el ancho de cada elemento dentro de la barra en 200 píxeles */
+    width: 200px;
+    
+    /* Establece la altura de cada elemento dentro de la barra en 180 píxeles */
+    height: 180px;
+    
+    /* Establece el color de fondo de cada elemento en #ccc */
+    background-color: #ccc;
+    
+    /* Agrega un margen exterior de 10 píxeles en todos los lados de cada elemento */
+    margin: 10px;
+}
+
+/* Estilo para elementos con la clase "products" */
+
+.products {
+    /* Utiliza el modelo de caja flex para los elementos con esta clase */
+    display: flex;
+    
+    /* Agrega un margen en la parte inferior de 20 píxeles para separar los productos */
+    margin-bottom: 20px;
+}
+
+/* Estilo para las imágenes dentro de elementos con la clase "products" */
+
+.products img {
+    /* Establece el ancho y la altura de la imagen en 180 píxeles */
+    width: 180px;
+    height: 180px;
+    
+    /* Agrega un margen a la derecha de 20 píxeles para separar la imagen del contenido */
+    margin-right: 20px;
+}
+
+/* Estilo para el contenido de la información del producto */
+
+.product-info {
+    /* Utiliza el modelo de caja flex para los elementos con esta clase */
+    display: flex;
+    
+    /* Establece la dirección del flujo en columna, lo que apila los elementos verticalmente */
+    flex-direction: column;
+}
+
+/* Estilo para el nombre del producto dentro de elementos con la clase "product-info" */
+
+.product-nombre {
+    /* Establece el peso de la fuente en negrita (bold) */
+    font-weight: bold;
+    
+    /* Agrega un margen en la parte inferior de 5 píxeles para separar el nombre del contenido */
+    margin-bottom: 5px;
+}
+
+/* Estilo para la descripción del producto dentro de elementos con la clase "product-info" */
+
+.product-descrip {
+    /* Agrega un margen en la parte inferior de 5 píxeles para separar la descripción del contenido */
+    margin-bottom: 5px;
+}
+
+/* Estilo para el precio del producto dentro de elementos con la clase "product-info" */
+
+.product-precio {
+    /* Establece el peso de la fuente en negrita (bold) */
+    font-weight: bold;
+    
+    /* Agrega un margen en la parte inferior de 10 píxeles para separar el precio del contenido */
+    margin-bottom: 10px;
+}
+
+/* Estilo para elementos con la clase "carrito" */
+
+.carrito {
+    /* Establece el color de fondo del botón en #4c3b27 */
+    background-color: #4c3b27;
+    
+    /* Establece el color del texto en blanco */
+    color: white;
+    
+    /* Elimina el borde del botón */
+    border: none;
+    
+    /* Agrega relleno de 5 píxeles en la parte superior e inferior y 10 píxeles en los lados */
+    padding: 5px 10px;
+    
+    /* Establece el texto en el centro del botón */
+    text-align: center;
+    
+    /* Elimina la decoración de texto, como subrayado y resaltado */
+    text-decoration: none;
+    
+    /* Muestra el botón como un elemento en línea en el flujo del texto */
+    display: inline-block;
+    
+    /* Cambia el cursor del ratón a una mano cuando se coloca sobre el botón, indicando que es interactivo */
+    cursor: pointer;
+}
+
+/* Estilo para el elemento "li" con la clase "carrito" cuando se coloca el cursor sobre él */
+
+li.carrito:hover {
+    /* Cambia el color de fondo cuando se pasa el cursor a #CB915B */
+    background-color: #CB915B;
+}
+
+/* Estilo para la lista desordenada con la clase "meniu" */
+
+ul.meniu {
+    /* Establece el tipo de lista en "none" para quitar los marcadores de lista */
+    list-style-type: none;
+    
+    /* Elimina el margen exterior y el relleno de la lista */
+    margin: 0;
+    padding: 0;
+    
+    /* Establece el desbordamiento a "hidden" para evitar que el contenido se desborde */
+    overflow: hidden;
+    
+    /* Establece el color de fondo de la lista en #A18262 */
+    background-color: #A18262;
+    
+    /* Establece la posición en la parte superior y la derecha en 0 */
+    top: 0;
+    right: 0;
+    
+    /* Establece el ancho de la lista en 175 píxeles */
+    width: 175px;
+    
+    /* Establece la altura de la lista en el 100% del alto de la ventana (viewport height) */
+    height: 100vh;
+}
+
+/* Estilo para elementos "li" con la clase "menu-item" */
+
+li.menu-item {
+   float:center; /* Establece el valor "float" en "center" (esto no es una propiedad CSS válida) */
+    /* Si deseas centrar los elementos, puedes usar "margin: 0 auto;" en lugar de "float" */
+}
+
+/* Estilo para los enlaces "a" dentro de elementos "li" con la clase "menu-item" */
+
+li.menu-item a {
+    /* Establece el enlace como un elemento en bloque */
+    display: block;
+    
+    /* Establece el color del texto en blanco */
+    color: #fff;
+    
+    /* Alinea el texto al centro */
+    text-align: center;
+    
+    /* Agrega relleno de 14 píxeles en la parte superior e inferior y 16 píxeles en los lados */
+    padding: 14px 16px;
+    
+    /* Elimina la decoración de texto, como subrayado y resaltado */
+    text-decoration: none;
+    
+    /* Establece la posición en la parte inferior y la derecha en 0 (esto no es necesario) */
+    bottom: 0;
+    right: 0; 
+    
+    /* Establece la posición como "relative" (esto debería ser "position: relative;") */
+    position: ret; 
+}
+
+/* Estilo para los enlaces "a" dentro de elementos "li" con la clase "menu-item" cuando se pasa el cursor sobre ellos */
+
+li.menu-item a:hover {
+    /* Cambia el color de fondo cuando se pasa el cursor a #CB915B */
+    background-color: #CB915B;
+}
+
+
+/* style catgranos.html*/
+
+/* Importa la fuente 'Open Sans' desde Google Fonts y establece los pesos de fuente 300, 400 y 800 para cargar */
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;800&display=swap');
+
+/* Establece estilos generales para todos los elementos en la página */
+
+* {
+    /* Elimina el margen exterior y el relleno por defecto */
+    margin: 0;
+    padding: 0;
+    
+    /* Define el modelo de caja como "border-box" para que el relleno y el borde se incluyan en el ancho y alto del elemento */
+    box-sizing: border-box;
+    
+    /* Establece la fuente por defecto para todos los elementos en 'Open Sans' */
+    font-family: 'Open Sans';
+}
+
+/* Estilo para elementos con la clase "contenido" */
+
+.contenido {
+    /* Establece el ancho máximo del contenido en 1200 píxeles */
+    max-width: 1200px;
+    
+    /* Establece el ancho del contenido en el 100% del ancho disponible */
+    width: 100%;
+    
+    /* Establece un margen de 40 píxeles en la parte superior e inferior y un margen automático en los lados izquierdo y derecho para centrar el contenido horizontalmente */
+    margin: 40px auto;
+    
+    /* Utiliza el modelo de caja flex para los elementos con esta clase, lo que permite la alineación de elementos hijos */
+    display: flex;
+}
+
+/* Estilo para elementos con la clase "mostrador" */
+
+.mostrador {
+    /* Establece el ancho en el 100% del ancho disponible */
+    width: 100%;
+    
+    /* Agrega una transición suave de 0.5 segundos */
+    transition: .5s ease;
+}
+
+/* Estilo para elementos con la clase "fila" dentro de elementos con la clase "mostrador" */
+
+.mostrador .fila {
+    /* Establece el ancho en el 100% del ancho disponible */
+    width: 100%;
+    
+    /* Utiliza el modelo de caja flex para los elementos con esta clase */
+    display: flex;
+    
+    /* Alinea los elementos en el espacio entre ellos horizontalmente */
+    justify-content: space-between;
+    
+    /* Agrega un margen en la parte inferior de 40 píxeles para separar las filas */
+    margin-bottom: 40px;
+}
+
+/* Estilo para elementos con la clase "item" dentro de elementos con la clase "fila" dentro de elementos con la clase "mostrador" */
+
+.mostrador .fila .item {
+    /* Establece el ancho máximo en 210 píxeles */
+    max-width: 210px;
+    
+    /* Agrega relleno de 30 píxeles */
+    padding: 30px;
+    
+    /* Establece la altura en 300 píxeles */
+    height: 300px;
+    
+    /* Establece el texto en el centro */
+    text-align: center;
+    
+    /* Agrega margen en los lados izquierdo y derecho de 10 píxeles y ningún margen en la parte superior e inferior */
+    margin: 0 10px;
+    
+    /* Cambia el cursor del ratón a una mano cuando se coloca sobre el elemento, indicando que es interactivo */
+    cursor: pointer;
+    
+    /* Agrega un radio de borde de 5 píxeles para dar forma al elemento */
+    border-radius: 5px;
+    
+    /* Agrega una transición suave de 0.3 segundos */
+    transition: .3s;
+}
+
+/* Estilo para elementos con la clase "item" cuando se pasa el cursor sobre ellos */
+
+.mostrador .fila .item:hover {
+    /* Cambia el color de fondo cuando se pasa el cursor a #e6e6e6 */
+    background-color: #e6e6e6;
+}
+
+/* Estilo para las imágenes dentro de elementos con la clase "item" */
+
+.mostrador .fila .item img {
+    /* Establece el ancho en el 100% del ancho del elemento padre */
+    width: 100%;
+    
+    /* Agrega margen en la parte superior e inferior de 30 píxeles y ningún margen en los lados */
+    margin: 30px 0;
+}
+
+/* Estilo para elementos con la clase "descripcion" dentro de elementos con la clase "item" */
+
+.mostrador .fila .item .descripcion {
+    /* Establece el color del texto en #707070 */
+    color: #707070;
+    
+    /* Establece el peso de la fuente en negrita (bold) */
+    font-weight: bold;
+}
+
+/* Estilo para elementos con la clase "precio" dentro de elementos con la clase "item" */
+
+.mostrador .fila .item .precio {
+    /* Establece el color del texto en #893d1c */
+    color: #893d1c;
+    
+    /* Establece el peso de la fuente en negrita (bold) */
+    font-weight: bold;
+    
+    /* Establece el tamaño de fuente en 20 píxeles */
+    font-size: 20px;
+}
+
+/* Estilo para elementos con la clase "seleccion" */
+
+.seleccion {
+    /* Agrega una transición suave de 0.5 segundos */
+    transition: .5s ease;
+    
+    /* Establece la opacidad en 0 (invisible) por defecto */
+    opacity: 0;
+    
+    /* Establece el ancho en 0% por defecto (invisible) */
+    width: 0%;
+    
+    /* Agrega un borde sólido de 1 píxel de color #ccc */
+    border: 1px solid #ccc;
+    
+    /* Establece la posición como relativa para elementos posicionados relativamente a este elemento */
+    position: relative;
+    
+    /* Utiliza el modelo de caja flex para los elementos con esta clase */
+    display: flex;
+    
+    /* Establece la dirección del flujo en columna, lo que apila los elementos verticalmente */
+    flex-direction: column;
+    
+    /* Alinea los elementos en el centro verticalmente */
+    justify-content: center;
+    
+    /* Oculta el desbordamiento del contenido que se extiende más allá de los límites del elemento */
+    overflow: hidden;
+}
+
+/* Estilo para elementos con la clase "cerrar" */
+
+.cerrar {
+    /* Establece la posición como absoluta para posicionar el elemento de manera absoluta dentro del elemento padre */
+    position: absolute;
+    
+    /* Establece la posición en la parte superior derecha */
+    right: 20px;
+    top: 20px;
+    
+    /* Cambia el cursor del ratón a una mano cuando se coloca sobre el elemento, indicando que es interactivo */
+    cursor: pointer;
+}
+
+/* Estilo para elementos con la clase "info" */
+
+.info {
+    /* Agrega relleno de 20 píxeles */
+    padding: 20px;
+}
+
+/* Estilo para imágenes dentro de elementos con la clase "info" */
+
+.info img {
+    /* Establece la imagen como un elemento en bloque y la centra horizontalmente */
+    display: block;
+    margin: 30px auto;
+    
+    /* Establece el ancho en el 80% del ancho del elemento padre */
+    width: 80%;
+}
+
+/* Estilo para encabezados h2 dentro de elementos con la clase "info" */
+
+.info h2 {
+    /* Establece el color del texto en #707070 */
+    color: #707070;
+    
+    /* Agrega margen en la parte inferior de 10 píxeles */
+    margin-bottom: 10px;
+}
+
+/* Estilo para párrafos (p) dentro de elementos con la clase "info" */
+
+.info p {
+    /* Establece el tamaño de fuente en 14 píxeles */
+    font-size: 14px;
+    
+    /* Establece el color del texto en #707070 */
+    color: #707070;
+    
+    /* Agrega margen en la parte inferior de 10 píxeles */
+    margin-bottom: 10px;
+}
+
+/* Estilo para elementos con la clase "precio" dentro de elementos con la clase "info" */
+
+.info .precio {
+    /* Establece el tamaño de fuente en 30 píxeles */
+    font-size: 30px;
+    
+    /* Establece el peso de la fuente en negrita (bold) */
+    font-weight: bold;
+    
+    /* Establece el color del texto en #893d1c */
+    color: #893d1c;
+    
+    /* Agrega margen en la parte inferior de 10 píxeles */
+    margin-bottom: 10px;
+    
+    /* Establece este elemento como un elemento en bloque */
+    display: block;
+}
+
+/* Estilo para elementos con la clase "fila" dentro de elementos con la clase "info" */
+
+.info .fila {
+    /* Utiliza el modelo de caja flex para los elementos con esta clase */
+    display: flex;
+    
+    /* Alinea los elementos en la parte inferior */
+    align-items: flex-end;
+}
+
+/* Estilo para etiquetas (label) dentro de elementos con la clase "fila" dentro de elementos con la clase "info" */
+
+.info .fila label {
+    /* Establece este elemento como un elemento en bloque */
+    display: block;
+    
+    /* Agrega margen en la parte inferior de 10 píxeles */
+    margin-bottom: 10px;
+}
+
+/* Estilo para selectores (select) dentro de elementos con la clase "fila" dentro de elementos con la clase "info" */
+
+.info .fila select {
+    /* Establece el ancho en 100 píxeles */
+    width: 100px;
+    
+    /* Establece el tamaño de fuente en 18 píxeles */
+    font-size: 18px;
+    
+    /* Agrega relleno de 6 píxeles */
+    padding: 6px;
+    
+    /* Agrega margen en la parte derecha de 30 píxeles */
+    margin-right: 30px;
+}
+
+/* Estilo para botones dentro de elementos con la clase "fila" dentro de elementos con la clase "info" */
+
+.info .fila button {
+    /* Establece la altura en 40 píxeles */
+    height: 40px;
+    
+    /* Elimina el borde del botón */
+    border: none;
+    
+    /* Agrega relleno de 0 en los lados y 10 píxeles en la parte superior e inferior */
+    padding: 0 10px;
+    
+    /* Establece el color del texto en blanco */
+    color: #fff;
+    
+    /* Establece el color de fondo en #f85151 */
+    background-color: #f85151;
+}
+
+/*USUARIOS.PHP*/
+/* Estilos para la tabla */
+.table {
+    background-color: #f3ebe2; /* Fondo de la tabla */
+    border: 1px solid #6d4c41; /* Borde de la tabla */
+}
+
+.table th {
+    background-color: #6d4c41; /* Color de fondo de las celdas de encabezado */
+    color: #fff; /* Color del texto del encabezado */
+}
+
+.table td {
+    background-color: #fff; /* Color de fondo de las celdas de datos */
+    color: #333; /* Color del texto de las celdas de datos */
+}
+
+/* Estilos para los botones */
+.btn {
+    background-color: #6d4c41; /* Color de fondo de los botones */
+    color: #fff; /* Color del texto de los botones */
+    border: none; /* Sin borde */
+}
+
+.btn:hover {
+    background-color: #4a362c; /* Color de fondo de los botones al pasar el mouse */
+}
+
+/* stylo formularios*/
+.text-center {
+   text-align: center;
+}
